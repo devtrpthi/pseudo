@@ -1,10 +1,10 @@
 import {React, useState} from "react";
 import  ReactDOM  from "react";
 
-function MyButton({count, onClick}) {
+function MyButton({count, Click}) {
     
     return(
-        <button onClick={onClick}>
+        <button onClick={Click}>
             Clicked {count} times  
         </button>
     );
@@ -20,8 +20,8 @@ function App() {
         return(
             <div>
                 <h1>Same update counters</h1>
-                <MyButton count={count} onClick={handleClick}/>
-                <MyButton count={count} onClick={handleClick}/>
+                <MyButton count={count} Click={handleClick}/>
+                <MyButton count={count} Click={handleClick}/>
             </div>
         );
     }
