@@ -1,26 +1,25 @@
 import React from "react";
 import  ReactDOM  from "react";
 
-const user = {
-    name: 'Hedy Lamarr',
-    imageUrl: 'https://i.imgur.com/yXOvdOSs.jpg',
-    imageSize: 90,
-  };
+const products =[
+    {title:'Cabbage', isFruit: false, id:1},
+    {title: 'Garlic', isFruit: false, id:2},
+    {title: 'Apple', isFruit: true, id:3},
+];
 
-
-  function App() {
-      return(
-        <div>
-            <h1>{user.name}</h1>
-            <img
-                className="avatar"
-                src={user.imageUrl}
-                style={{
-                    width: user.imageSize,
-                    height: user.imageSize
-                }}
-            />
-        </div>
-      );
-  }
+function App() {
+    const listItems = products.map(product => 
+        <li 
+        key= {products.id}
+        style= {{
+            color: product.isFruit ? 'magenta' : 'darkgreen'
+        }}
+        >
+            {product.title}
+        </li>
+        );
+    return(
+        <ul>{listItems}</ul>
+    );
+}
   export default App;
