@@ -1,25 +1,27 @@
 import {React, useState} from "react";
 import  ReactDOM  from "react";
 
-function MyButton() {
-    const[count, setCount] = useState(1);
-
-    function handleClick(){
-        setCount(count + 1);
-    }
+function MyButton({count, onClick}) {
+    
     return(
-        <button onClick={handleClick}>
+        <button onClick={onClick}>
             Clicked {count} times  
         </button>
     );
 }
 
-    function App() {
+
+function App() {
+        const[count, setCount] = useState(1);
+
+    function handleClick(){
+        setCount(count + 1);
+    }
         return(
             <div>
-                <h1>Random counters</h1>
-                <MyButton/>
-                <MyButton/>
+                <h1>Same update counters</h1>
+                <MyButton count={count} onClick={handleClick}/>
+                <MyButton count={count} onClick={handleClick}/>
             </div>
         );
     }
