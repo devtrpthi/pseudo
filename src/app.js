@@ -9,7 +9,7 @@ function MyButton() {
     }
     return(
         <button onClick={handleClick}>
-            Clicked {count} times
+            Clicked {count} times  
         </button>
     );
 }
