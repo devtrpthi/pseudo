@@ -49,7 +49,7 @@ function ProductTable({products}) {
             <thread>
                 <tr>
                     <th>Name</th>
-                    <th>Price</th>
+                    <span><th>Price</th> </span>
                 </tr>
             </thread>
             <tbody>{rows}</tbody>
