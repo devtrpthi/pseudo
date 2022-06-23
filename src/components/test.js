@@ -89,7 +89,7 @@ const PRODUCTS = [
 
 function Test(){
     return(
-        <FilterTable products={PRODUCTS} />
+        <FilterProductTable products={PRODUCTS} />
     );
 }
 
