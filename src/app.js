@@ -1,28 +1,22 @@
-import {React, useState} from "react";
-import  ReactDOM  from "react";
+import React from "react";
 
-function MyButton({count, Click}) {
-    
+function Profile() {
     return(
-        <button onClick={Click}>
-            Clicked {count} times  
-        </button>
+        <img
+             src="https://i.imgur.com/MK3eW3As.jpg"
+        />
     );
 }
 
+function Gallery() {
+    return(
+        <div>
+            <h2>Amazing Scientists</h2>
+            <Profile/>
+            <Profile/>
+            <Profile/>
+        </div>
+    );
+}
 
-function App() {
-        const[count, setCount] = useState(1);
-
-    function handleClick(){
-        setCount(count + 1);
-    }
-        return(
-            <div>
-                <h1>Same update counters</h1>
-                <MyButton count={count} Click={handleClick}/>
-                <MyButton count={count} Click={handleClick}/>
-            </div>
-        );
-    }
-  export default App;
+export default Gallery;
