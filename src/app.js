@@ -1,20 +1,26 @@
 import React from "react";
 
+import { people } from './data.js';
+import { getImageUrl } from './utils.js';
 
-function App() {
-    return(
-        <div>
-            <h1> Heddy Lamar high's</h1>
-            <img
-            src="https://i.imgur.com/yXOvdOSs.jpg"
-            className="photo" />
-            <ul>
-            <li>Invent new traffic lights</li>
-        <li>Rehearse a movie scene</li>
-        <li>Improve spectrum technology</li>
-            </ul>
-        </div>
-    );
+export default function App() {
+  const listItems = people.map(person =>
+    <li key={person.id}>
+      <img
+        src={getImageUrl(person)}
+        alt={person.name}
+      />
+      <p>
+        <b>{person.name}:</b>
+        {' ' + person.profession + ' '}
+        known for {person.accomplishment}
+      </p>
+    </li>
+  );
+  return (
+    <article>
+      <h1>Scientists</h1>
+      <ul>{listItems}</ul>
+    </article>
+  );
 }
-
-export default App;
