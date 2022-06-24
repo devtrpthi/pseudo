@@ -1,15 +1,20 @@
 import React from "react";
-import Profile from "./profile";
 
-function Gallery() {
+
+function App() {
     return(
         <div>
-            <h2>Amazing Scientists</h2>
-            <Profile/>
-            <Profile/>
-            <Profile/>
+            <h1> Heddy Lamar high's</h1>
+            <img
+            src="https://i.imgur.com/yXOvdOSs.jpg"
+            className="photo" />
+            <ul>
+            <li>Invent new traffic lights</li>
+        <li>Rehearse a movie scene</li>
+        <li>Improve spectrum technology</li>
+            </ul>
         </div>
     );
 }
 
-export default Gallery;
+export default App;
