@@ -1,5 +1,6 @@
 import React from "react";
 
+
 import { people } from './data.js';
 import { getImageUrl } from './utils.js';
 
