@@ -21,7 +21,7 @@ const App = () => {
     <div>
       <h1>Adopt Me!</h1>
       <Pet name='Luna' animal='Dog' breed='Havaneese' />
-      <Pet name='Pepper' animal='bird' breed='Cackatiel'/>
+      <Pet name='Pepper' animal='bird' breed='Cockatiel'/>
       <Pet name= 'Sudo' animal='Dog' breed= 'Wheaten Terrier'/>
     </div>
   );
