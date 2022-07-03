@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 
-
+import Pet from "./pet";
 
 
 const App = () => {
