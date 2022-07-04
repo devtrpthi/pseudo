@@ -1,7 +1,7 @@
 import {React, useState} from "react";
 
 
-const ANIMALS = ['bird', 'cat', 'dog', 'rabbit' , 'rpetile'];
+const ANIMALS = ['bird', 'cat', 'dog', 'rabbit' , 'reptile'];
 
 
 const SearchParams = () => {
