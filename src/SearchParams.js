@@ -1,5 +1,9 @@
 import {React, useState} from "react";
 
+
+const ANIMALS = ['bird', 'cat', 'dog', 'rabbit' , 'rpetile'];
+
+
 const SearchParams = () => {
     const [location, setLocation] = useState("Seattle, WA");
     
