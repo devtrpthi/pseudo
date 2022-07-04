@@ -21,7 +21,7 @@ const SearchParams = () => {
                         id="animal" value={animal} onChange={(e) => setAnimal(e.target.value)}
                         onBlur={(e) => setAnimal(e.target.value)}
                     />
-                    <option/>
+                     <option/>
                     {ANIMALS.map((animal) =>(
                         <option value={animal} key={animal}>
                             {animal}
