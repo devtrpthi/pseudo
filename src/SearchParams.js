@@ -8,7 +8,7 @@ const SearchParams = () => {
             <form>
                 <label htmlFor="location">
                     Location
-                    <input id="location" onChange={e => setLocation(e.target.value)} value={location} placeholder="location"/>
+                    <input id="location" onChange={e => setLocation(e.target.value)} value={location} placeholder="Location"/>
                 </label>
                 <button>
                     Submit
