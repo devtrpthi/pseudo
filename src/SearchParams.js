@@ -18,8 +18,8 @@ const SearchParams = () => {
                 <label htmlFor="animal">
                     Animal
                     <select
-                        id="animal" value={animal} onChange={e => setAnimal(e.target.value)}
-                        onBlur={e => setAnimal(e.target.value)}
+                        id="animal" value={animal} onChange={(e) => setAnimal(e.target.value)}
+                        onBlur={(e) => setAnimal(e.target.value)}
                     />
                     <option/>
                     {ANIMALS.map((animal) =>(
