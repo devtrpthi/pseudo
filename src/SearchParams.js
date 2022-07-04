@@ -20,13 +20,14 @@ const SearchParams = () => {
                     <select
                         id="animal" value={animal} onChange={(e) => setAnimal(e.target.value)}
                         onBlur={(e) => setAnimal(e.target.value)}
-                    />
+                    >
                      <option/>
                     {ANIMALS.map((animal) =>(
                         <option value={animal} key={animal}>
                             {animal}
                         </option>
-                    ))}
+                    ))} 
+                    </select>
                 </label>
                 <button>
                     Submit
