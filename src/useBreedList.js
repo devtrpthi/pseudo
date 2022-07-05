@@ -28,6 +28,8 @@ async function requestBreedList() {
         localCache[animal] = json.breeds || [];
         setBreedList(localCache[animal]);
         setStatus('loaded');
-}
-})
+    }
+},[animal])
+
+    return [breedList,status];
 }
