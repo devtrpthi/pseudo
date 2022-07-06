@@ -4,7 +4,7 @@ import React from "react";
 const Results = ({pets}) => {
     return(
         <div className="search">
-            (!pets.length ? (
+            {!pets.length ? (
                 <h2>No pets found</h2>
             ) : (
                 pets.map((pet) => (
@@ -18,7 +18,7 @@ const Results = ({pets}) => {
                         id={pet.id}
                     />
                 ))
-            ))
+            )}
 
         </div>
     );
