@@ -1,6 +1,6 @@
 import React from "react";
 import  ReactDOM  from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import './App.css';
 import SearchParams from "./SearchParams";
 import Details from "./Details";
@@ -10,12 +10,14 @@ const App = () => {
     <div>
       <h1>Adopt Me!</h1>
       <Router>
+        <Switch>
       <Route path='/details/:id'>
           <Details/>
       </Route>
         <Route path='/'>
         <SearchParams/>
         </Route>
+        </Switch>
       </Router>
     </div>
   );
