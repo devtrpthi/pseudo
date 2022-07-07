@@ -20,10 +20,12 @@ class Details extends Component {
             },
              json.pets[0]
         )
-        );
-    }
+    );
+}
     render () {
+        console.log(this.state);
         return (
+            
             <h2>hi</h2>
         );
     }
