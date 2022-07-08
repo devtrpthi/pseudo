@@ -13,7 +13,7 @@ class Carousel extends Component{
 
     render() {
         const {active} = this.state;
-        const {image} = this.props;
+        const {images} = this.props;
 
         return(
             <div className="carousel">
