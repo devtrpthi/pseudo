@@ -10,3 +10,10 @@ class Carousel extends Component{
         images: ['http://pets-images.dev-apis.com/pets/none.jpg']
     }
 }
+
+Carousel.defaultProps
+
+const carousel = new Carousel;
+
+carousel.defaultProps;
+carousel.props;
