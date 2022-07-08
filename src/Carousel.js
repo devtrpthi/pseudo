@@ -9,11 +9,29 @@ class Carousel extends Component{
     static defaultProps = {
         images: ['http://pets-images.dev-apis.com/pets/none.jpg']
     }
+
+
+    render() {
+        const {active} = this.state;
+        const {image} = this.props;
+
+        return(
+            <div className="carousel">
+                <img src={images[active]} alt="animal"/>
+                <div className="carousel-smaller">
+                    {images.map((photo,index)=>(
+                        <img
+                            key={photo}
+                            src={photo}
+                            className={index === active ? 'active' : ''}
+                            alt='animal thumbnail'
+                        />
+                    ))}
+                </div>
+            </div>
+        );
+    }
 }
 
-Carousel.defaultProps
 
-const carousel = new Carousel;
-
-carousel.defaultProps;
-carousel.props;
+export  default Carousel;
