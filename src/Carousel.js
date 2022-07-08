@@ -30,7 +30,7 @@ class Carousel extends Component{
                             key={photo}
                             src={photo}
                             data-index={index}
-                            onClick={this.handleIndexClick}
+                            onClick={this.handleIndexClick.bind(this)}
                             className={index === active ? 'active' : ''}
                             alt='animal thumbnail'
                         />
