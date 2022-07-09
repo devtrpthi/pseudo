@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 class ErrorBoundary extends Component{
     state = {hasError: false};
     static getDerivedFromError(){
-        return{hasError: true}
+        return{hasError: true};
     }
     componentDidCatch(error, info) {
         console.error('ErrorBoundary caught an error', error, info);
@@ -15,7 +15,7 @@ class ErrorBoundary extends Component{
                 <h2>
                     This listing has an error.<Link to='/'>Click Here</Link> to go back to the home page.
                 </h2>
-            )
+            );
         }
         return this.props.children;
     }
