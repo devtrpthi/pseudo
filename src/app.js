@@ -9,8 +9,8 @@ import ThemeContext from "./ThemeContext";
 const App = () => {
   const theme = useState('darkblue');
   return(
+    <ThemeContext.Provider value={theme}>
     <div>
-    
       <Router>
       <header>
     <Link to='/'>
@@ -27,6 +27,7 @@ const App = () => {
         </Switch>
       </Router>
     </div>
+    </ThemeContext.Provider>
   );
 }
 
