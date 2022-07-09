@@ -41,6 +41,13 @@ class Details extends Component {
     }
 }
 
+const DetailsWithRouter = withRouter(Details);
 
 
-export default withRouter(Details);
+export default function DetailsWithErorBoundary() {
+    return(
+        <ErrorBoundary>
+            <DetailsWithRouter/>
+        </ErrorBoundary>
+    );
+};
