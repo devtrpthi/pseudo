@@ -26,6 +26,7 @@ class Details extends Component {
             return <h2>loading ..</h2>
         }
         const {animal, breed, city, state, description, name, images} = this.state;
+        throw new Error('fuck it bro!');
         return (
             <div className="details">
             <Carousel images={images}/>
@@ -50,4 +51,4 @@ export default function DetailsWithErorBoundary() {
             <DetailsWithRouter/>
         </ErrorBoundary>
     );
-};
+}
