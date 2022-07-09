@@ -12,6 +12,7 @@ const SearchParams = () => {
     const [breed, setBreed] = useState('');
     const [pets, setPets] = useState([]);
     const [breeds] = useBreedList(animal);
+    const [theme] = useContext(ThemeContext);
 
     useEffect(() =>{
         requestPets();
@@ -66,7 +67,7 @@ const SearchParams = () => {
                     ))} 
                     </select>
                 </label>
-                <button>
+                <button style={{ backgroundColor: theme}}>
                     Submit
                 </button>
             </form>
