@@ -1,11 +1,13 @@
-import React from "react";
+import {React, useState} from "react";
 import  ReactDOM  from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import './App.css';
 import SearchParams from "./SearchParams";
 import Details from "./Details";
+import ThemeContext from "./ThemeContext";
 
 const App = () => {
+  const theme = useState('darkblue');
   return(
     <div>
     
