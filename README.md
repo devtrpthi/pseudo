@@ -1,1 +1,1 @@
-Beta docs are goood!!
+Beta docs are goood!!!
